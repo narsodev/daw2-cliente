@@ -20,7 +20,6 @@ const updateDate = date => {
   dateElement.textContent = `Fecha: ${date}`
 }
 
-window.alert(stringDateNow())
 updateDate(stringDateNow())
 
 setInterval(() => updateDate(stringDateNow()), 1000)

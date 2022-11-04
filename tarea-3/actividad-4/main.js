@@ -9,8 +9,9 @@ const allProperties = Object.keys(Object.getPrototypeOf(navigator))
 
 const properties = allProperties
   .filter(property =>
-    !IGNORED_TYPES.includes(typeof navigator[property]) &&
-    navigator[property])
+    navigator[property] &&
+    !IGNORED_TYPES.includes(typeof navigator[property]) 
+  )
 
 properties.forEach(property => {
   const value = navigator[property]

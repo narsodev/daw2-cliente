@@ -4,7 +4,7 @@ const $print = $('#print')
 $print.addEventListener('click', () => window.print())
 
 const $open = $('#open')
-$open.addEventListener('click', () => window.open('https://www.google.com', '_blank', 'width=400,height=400'))
+$open.addEventListener('click', () => window.open('https://www.google.com', 'google', 'width=400,height=400'))
 
 const $alert = $('#alert')
 $alert.addEventListener('click', () => window.alert('Método alert'))
